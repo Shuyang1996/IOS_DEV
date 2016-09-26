@@ -1,0 +1,10 @@
+git clone "url"  : clone repository on local machine 
+git pull : update local branch
+git add . : stage all the changes on local machine 
+git commit -m "message" : commit message
+git push : push local commits to github repository
+
+git checkout "branchname" : switch to a branch called "branchname"
+git branch "branchname" : create a new branch called "branchname"
+
+git push origin branchname : push local new branch to github repository
