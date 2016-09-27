@@ -108,9 +108,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3NJ-Bm-jiU">
+                                <rect key="frame" x="100" y="20" width="121" height="29"/>
+                                <segments>
+                                    <segment title="Friends"/>
+                                    <segment title="Me"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.85970052080000003" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="3NJ-Bm-jiU" firstAttribute="top" secondItem="NMY-5z-gMX" secondAttribute="bottom" id="Vii-Tq-qYZ"/>
+                            <constraint firstItem="3NJ-Bm-jiU" firstAttribute="top" secondItem="NMY-5z-gMX" secondAttribute="bottom" constant="71" id="eJg-PQ-Iog"/>
+                            <constraint firstItem="3NJ-Bm-jiU" firstAttribute="centerX" secondItem="yqf-7y-BBt" secondAttribute="centerX" id="iBa-fF-VJh"/>
                             <constraint firstItem="6HG-pM-6d4" firstAttribute="centerX" secondItem="yqf-7y-BBt" secondAttribute="centerX" id="m8f-UM-paA"/>
                             <constraint firstItem="6HG-pM-6d4" firstAttribute="centerY" secondItem="yqf-7y-BBt" secondAttribute="centerY" id="rmB-C9-Cv7"/>
                         </constraints>
