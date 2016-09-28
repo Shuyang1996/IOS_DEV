@@ -115,6 +115,11 @@
                                     <segment title="Me"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Bpe-bI-CiM" kind="popoverPresentation" popoverAnchorView="3NJ-Bm-jiU" id="9Tm-aU-2r1">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.85970052080000003" colorSpace="calibratedRGB"/>
@@ -132,6 +137,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ht-9r-GIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="453" y="916"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NPA-Oy-m0n">
+            <objects>
+                <viewController id="Bpe-bI-CiM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fmh-dT-dq9"/>
+                        <viewControllerLayoutGuide type="bottom" id="X1e-hB-AiA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ca5-Mp-rar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deU-Qf-52N">
+                                <rect key="frame" x="139" y="229" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="deU-Qf-52N" firstAttribute="centerY" secondItem="ca5-Mp-rar" secondAttribute="centerY" id="C4k-cl-m4h"/>
+                            <constraint firstItem="deU-Qf-52N" firstAttribute="centerX" secondItem="ca5-Mp-rar" secondAttribute="centerX" id="a9v-tp-rSv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smi-4b-IDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453" y="1493"/>
         </scene>
         <!--Me-->
         <scene sceneID="PYq-ho-eMx">
