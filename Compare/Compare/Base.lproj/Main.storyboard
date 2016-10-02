@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Contacts View Controller-->
         <scene sceneID="pQg-cw-0Ur">
             <objects>
-                <viewController id="2qt-e9-RVX" sceneMemberID="viewController">
+                <viewController title="Contacts View Controller" id="2qt-e9-RVX" customClass="ContactsViewController" customModule="Compare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="buh-YL-25O"/>
                         <viewControllerLayoutGuide type="bottom" id="gMb-x5-POF"/>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="887" y="131"/>
         </scene>
-        <!--Chats-->
+        <!--Chats View Controller-->
         <scene sceneID="0yL-Vp-WWa">
             <objects>
-                <viewController id="sMB-Zx-952" sceneMemberID="viewController">
+                <viewController title="Chats View Controller" id="sMB-Zx-952" customClass="ChatsViewController" customModule="Compare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sg9-Ob-F5b"/>
                         <viewControllerLayoutGuide type="bottom" id="EXu-EA-fsb"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-239" y="607"/>
         </scene>
-        <!--Social-->
+        <!--Social View Controller-->
         <scene sceneID="9IW-Mp-RQ3">
             <objects>
-                <viewController id="qgz-fv-iAJ" sceneMemberID="viewController">
+                <viewController title="Social View Controller" id="qgz-fv-iAJ" customClass="SocialViewController" customModule="Compare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NMY-5z-gMX"/>
                         <viewControllerLayoutGuide type="bottom" id="Iz7-aj-yuq"/>
@@ -115,11 +115,6 @@
                                     <segment title="Me"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="Bpe-bI-CiM" kind="popoverPresentation" popoverAnchorView="3NJ-Bm-jiU" id="9Tm-aU-2r1">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.85970052080000003" colorSpace="calibratedRGB"/>
@@ -138,41 +133,10 @@
             </objects>
             <point key="canvasLocation" x="453" y="916"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="NPA-Oy-m0n">
-            <objects>
-                <viewController id="Bpe-bI-CiM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fmh-dT-dq9"/>
-                        <viewControllerLayoutGuide type="bottom" id="X1e-hB-AiA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ca5-Mp-rar">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deU-Qf-52N">
-                                <rect key="frame" x="139" y="229" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="deU-Qf-52N" firstAttribute="centerY" secondItem="ca5-Mp-rar" secondAttribute="centerY" id="C4k-cl-m4h"/>
-                            <constraint firstItem="deU-Qf-52N" firstAttribute="centerX" secondItem="ca5-Mp-rar" secondAttribute="centerX" id="a9v-tp-rSv"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="smi-4b-IDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="453" y="1493"/>
-        </scene>
-        <!--Me-->
+        <!--Me View Controller-->
         <scene sceneID="PYq-ho-eMx">
             <objects>
-                <viewController id="zOa-vI-WAg" sceneMemberID="viewController">
+                <viewController title="Me View Controller" id="zOa-vI-WAg" customClass="MeViewController" customModule="Compare" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qYd-lB-qMm"/>
                         <viewControllerLayoutGuide type="bottom" id="uL2-3q-98e"/>

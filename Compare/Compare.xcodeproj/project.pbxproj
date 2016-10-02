@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D29CF5A1DA1A3730029492B /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29CF591DA1A3730029492B /* ChatsViewController.swift */; };
+		3D29CF5C1DA1A3940029492B /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29CF5B1DA1A3940029492B /* ContactsViewController.swift */; };
+		3D29CF5E1DA1A39F0029492B /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29CF5D1DA1A39F0029492B /* MeViewController.swift */; };
+		3D29CF601DA1A3AD0029492B /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D29CF5F1DA1A3AD0029492B /* SocialViewController.swift */; };
 		3D6604251D98D5F5003C0C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6604241D98D5F5003C0C98 /* AppDelegate.swift */; };
 		3D6604271D98D5F5003C0C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6604261D98D5F5003C0C98 /* ViewController.swift */; };
 		3D66042A1D98D5F5003C0C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6604281D98D5F5003C0C98 /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D29CF591DA1A3730029492B /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		3D29CF5B1DA1A3940029492B /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		3D29CF5D1DA1A39F0029492B /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		3D29CF5F1DA1A3AD0029492B /* SocialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		3D6604211D98D5F5003C0C98 /* Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6604241D98D5F5003C0C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D6604261D98D5F5003C0C98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 				3D6604301D98D5F5003C0C98 /* LaunchScreen.storyboard */,
 				3D6604331D98D5F5003C0C98 /* Info.plist */,
 				3D66042B1D98D5F5003C0C98 /* Compare.xcdatamodeld */,
+				3D29CF591DA1A3730029492B /* ChatsViewController.swift */,
+				3D29CF5B1DA1A3940029492B /* ContactsViewController.swift */,
+				3D29CF5D1DA1A39F0029492B /* MeViewController.swift */,
+				3D29CF5F1DA1A3AD0029492B /* SocialViewController.swift */,
 			);
 			path = Compare;
 			sourceTree = "<group>";
@@ -259,9 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D29CF5E1DA1A39F0029492B /* MeViewController.swift in Sources */,
 				3D66042D1D98D5F5003C0C98 /* Compare.xcdatamodeld in Sources */,
+				3D29CF601DA1A3AD0029492B /* SocialViewController.swift in Sources */,
 				3D6604271D98D5F5003C0C98 /* ViewController.swift in Sources */,
+				3D29CF5A1DA1A3730029492B /* ChatsViewController.swift in Sources */,
 				3D6604251D98D5F5003C0C98 /* AppDelegate.swift in Sources */,
+				3D29CF5C1DA1A3940029492B /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +504,7 @@
 				3D66044E1D98D5F5003C0C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D66044F1D98D5F5003C0C98 /* Build configuration list for PBXNativeTarget "CompareTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +513,7 @@
 				3D6604511D98D5F5003C0C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D6604521D98D5F5003C0C98 /* Build configuration list for PBXNativeTarget "CompareUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +522,7 @@
 				3D6604541D98D5F5003C0C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
