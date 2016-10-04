@@ -8,9 +8,10 @@
 
 import UIKit
 
-class SocialViewController: UIViewController {
+class SocialViewController: UIViewController{
     //properties
     @IBOutlet weak var socialLabel: UILabel!
+    @IBOutlet weak var typeSelector: UISegmentedControl!
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,12 @@ class SocialViewController: UIViewController {
     
     //action
     @IBAction func pageSwtich(sender: UISegmentedControl) {
-        socialLabel.text = "haha"
+        if( typeSelector.selectedSegmentIndex == 0){
+            socialLabel.text = "Friends"
+        }else{
+            socialLabel.text = "Me"
+        }
+        
     }
     
     

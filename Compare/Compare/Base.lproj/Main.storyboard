@@ -144,6 +144,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="socialLabel" destination="6HG-pM-6d4" id="cDO-Q3-fFx"/>
+                        <outlet property="typeSelector" destination="3NJ-Bm-jiU" id="5mC-Nn-AjW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ht-9r-GIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
