@@ -126,7 +126,7 @@
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-E9-WlY">
-                                <rect key="frame" x="0.0" y="69" width="320" height="362"/>
+                                <rect key="frame" x="0.0" y="123" width="320" height="308"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="5Xk-4k-oWo">
@@ -149,6 +149,7 @@
                             <constraint firstItem="E1p-E9-WlY" firstAttribute="leading" secondItem="yqf-7y-BBt" secondAttribute="leadingMargin" constant="-20" id="AYK-LE-DsU"/>
                             <constraint firstItem="E1p-E9-WlY" firstAttribute="top" secondItem="3NJ-Bm-jiU" secondAttribute="bottom" constant="21" id="Fs4-mS-umq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E1p-E9-WlY" secondAttribute="trailing" constant="-20" id="S67-Yq-uE5"/>
+                            <constraint firstItem="E1p-E9-WlY" firstAttribute="top" secondItem="3NJ-Bm-jiU" secondAttribute="bottom" constant="54" id="SDF-X3-oXa"/>
                             <constraint firstItem="3NJ-Bm-jiU" firstAttribute="top" secondItem="NMY-5z-gMX" secondAttribute="bottom" id="Vii-Tq-qYZ"/>
                             <constraint firstItem="3NJ-Bm-jiU" firstAttribute="top" secondItem="NMY-5z-gMX" secondAttribute="bottom" constant="71" id="eJg-PQ-Iog"/>
                             <constraint firstItem="3NJ-Bm-jiU" firstAttribute="centerX" secondItem="yqf-7y-BBt" secondAttribute="centerX" id="iBa-fF-VJh"/>
