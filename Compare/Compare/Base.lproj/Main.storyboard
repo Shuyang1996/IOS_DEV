@@ -126,6 +126,9 @@
                                     <segment title="Me"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="pageSwtich:" destination="qgz-fv-iAJ" eventType="valueChanged" id="z0k-bw-3la"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.85970052080000003" colorSpace="calibratedRGB"/>
@@ -139,6 +142,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="social profile" id="ri3-3w-YZS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="socialLabel" destination="6HG-pM-6d4" id="cDO-Q3-fFx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ht-9r-GIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

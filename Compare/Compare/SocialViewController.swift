@@ -9,7 +9,9 @@
 import UIKit
 
 class SocialViewController: UIViewController {
-
+    //properties
+    @IBOutlet weak var socialLabel: UILabel!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +24,15 @@ class SocialViewController: UIViewController {
     }
     
 
+    
+    
+    
+    //action
+    @IBAction func pageSwtich(sender: UISegmentedControl) {
+        socialLabel.text = "haha"
+    }
+    
+    
     /*
     // MARK: - Navigation
 
