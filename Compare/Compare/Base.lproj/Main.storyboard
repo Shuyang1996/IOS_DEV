@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Contacts View Controller-->
@@ -113,12 +114,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Social" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HG-pM-6d4">
-                                <rect key="frame" x="119" y="225" width="83" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3NJ-Bm-jiU">
                                 <rect key="frame" x="100" y="20" width="121" height="29"/>
                                 <segments>
@@ -127,23 +122,43 @@
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="pageSwtich:" destination="qgz-fv-iAJ" eventType="valueChanged" id="z0k-bw-3la"/>
+                                    <action selector="tableSwitch:" destination="qgz-fv-iAJ" eventType="valueChanged" id="ddT-u2-krP"/>
                                 </connections>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-E9-WlY">
+                                <rect key="frame" x="0.0" y="69" width="320" height="362"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="5Xk-4k-oWo">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Xk-4k-oWo" id="5dT-U2-hxX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qgz-fv-iAJ" id="q1y-iR-Eal"/>
+                                    <outlet property="delegate" destination="qgz-fv-iAJ" id="Ro9-OL-mw4"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.85970052080000003" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="E1p-E9-WlY" firstAttribute="leading" secondItem="yqf-7y-BBt" secondAttribute="leadingMargin" constant="-20" id="AYK-LE-DsU"/>
+                            <constraint firstItem="E1p-E9-WlY" firstAttribute="top" secondItem="3NJ-Bm-jiU" secondAttribute="bottom" constant="21" id="Fs4-mS-umq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E1p-E9-WlY" secondAttribute="trailing" constant="-20" id="S67-Yq-uE5"/>
                             <constraint firstItem="3NJ-Bm-jiU" firstAttribute="top" secondItem="NMY-5z-gMX" secondAttribute="bottom" id="Vii-Tq-qYZ"/>
                             <constraint firstItem="3NJ-Bm-jiU" firstAttribute="top" secondItem="NMY-5z-gMX" secondAttribute="bottom" constant="71" id="eJg-PQ-Iog"/>
                             <constraint firstItem="3NJ-Bm-jiU" firstAttribute="centerX" secondItem="yqf-7y-BBt" secondAttribute="centerX" id="iBa-fF-VJh"/>
-                            <constraint firstItem="6HG-pM-6d4" firstAttribute="centerX" secondItem="yqf-7y-BBt" secondAttribute="centerX" id="m8f-UM-paA"/>
-                            <constraint firstItem="6HG-pM-6d4" firstAttribute="centerY" secondItem="yqf-7y-BBt" secondAttribute="centerY" id="rmB-C9-Cv7"/>
+                            <constraint firstItem="Iz7-aj-yuq" firstAttribute="top" secondItem="E1p-E9-WlY" secondAttribute="bottom" id="nLF-0c-thl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="social profile" id="ri3-3w-YZS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="socialLabel" destination="6HG-pM-6d4" id="cDO-Q3-fFx"/>
+                        <outlet property="profilePicTable" destination="E1p-E9-WlY" id="RHT-k4-6gw"/>
                         <outlet property="typeSelector" destination="3NJ-Bm-jiU" id="5mC-Nn-AjW"/>
                     </connections>
                 </viewController>
