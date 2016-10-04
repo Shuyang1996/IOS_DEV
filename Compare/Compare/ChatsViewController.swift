@@ -9,6 +9,9 @@
 import UIKit
 
 class ChatsViewController: UIViewController {
+    //properties
+    @IBOutlet weak var bigTitle: UILabel!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,12 @@ class ChatsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //action
+    
+    @IBAction func chatsButton(sender: UIButton) {
+        bigTitle.text = "haha"
     }
     
 

@@ -55,15 +55,26 @@
                                 <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKP-u3-QNg">
+                                <rect key="frame" x="137" y="189" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="chatsButton:" destination="sMB-Zx-952" eventType="touchUpInside" id="How-vm-xQv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="vzn-Qt-sNy" firstAttribute="centerX" secondItem="EH6-un-L0m" secondAttribute="centerX" id="SWG-5D-QP7"/>
+                            <constraint firstItem="nKP-u3-QNg" firstAttribute="centerX" secondItem="EH6-un-L0m" secondAttribute="centerX" id="YBZ-Fj-mP6"/>
                             <constraint firstItem="vzn-Qt-sNy" firstAttribute="centerY" secondItem="EH6-un-L0m" secondAttribute="centerY" id="gZD-of-bjH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Chats" image="Chats" id="ato-dg-Lo5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bigTitle" destination="vzn-Qt-sNy" id="1y6-v0-ljd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t6K-Sg-fXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
