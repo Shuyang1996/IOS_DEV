@@ -15,6 +15,7 @@
 		3D6604321D98D5F5003C0C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6604301D98D5F5003C0C98 /* LaunchScreen.storyboard */; };
 		3D66043D1D98D5F5003C0C98 /* CompareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66043C1D98D5F5003C0C98 /* CompareTests.swift */; };
 		3D6604481D98D5F5003C0C98 /* CompareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6604471D98D5F5003C0C98 /* CompareUITests.swift */; };
+		C6A070DC1D9B74DD005C612C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A070DB1D9B74DD005C612C /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D6604431D98D5F5003C0C98 /* CompareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6604471D98D5F5003C0C98 /* CompareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareUITests.swift; sourceTree = "<group>"; };
 		3D6604491D98D5F5003C0C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A070DB1D9B74DD005C612C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3D6604301D98D5F5003C0C98 /* LaunchScreen.storyboard */,
 				3D6604331D98D5F5003C0C98 /* Info.plist */,
 				3D66042B1D98D5F5003C0C98 /* Compare.xcdatamodeld */,
+				C6A070DB1D9B74DD005C612C /* LoginViewController.swift */,
 			);
 			path = Compare;
 			sourceTree = "<group>";
@@ -196,13 +199,16 @@
 				TargetAttributes = {
 					3D6604201D98D5F5003C0C98 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					3D6604371D98D5F5003C0C98 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3D6604201D98D5F5003C0C98;
 					};
 					3D6604421D98D5F5003C0C98 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 3D6604201D98D5F5003C0C98;
 					};
 				};
@@ -259,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A070DC1D9B74DD005C612C /* LoginViewController.swift in Sources */,
 				3D66042D1D98D5F5003C0C98 /* Compare.xcdatamodeld in Sources */,
 				3D6604271D98D5F5003C0C98 /* ViewController.swift in Sources */,
 				3D6604251D98D5F5003C0C98 /* AppDelegate.swift in Sources */,
@@ -409,6 +416,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Compare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Compare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CompareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Compare.app/Compare";
 			};
 			name = Debug;
@@ -443,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CompareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Compare.app/Compare";
 			};
 			name = Release;
@@ -454,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CompareUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Compare;
 			};
 			name = Debug;
@@ -465,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CompareUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Compare;
 			};
 			name = Release;
@@ -488,6 +501,7 @@
 				3D66044E1D98D5F5003C0C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D66044F1D98D5F5003C0C98 /* Build configuration list for PBXNativeTarget "CompareTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +510,7 @@
 				3D6604511D98D5F5003C0C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D6604521D98D5F5003C0C98 /* Build configuration list for PBXNativeTarget "CompareUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +519,7 @@
 				3D6604541D98D5F5003C0C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
