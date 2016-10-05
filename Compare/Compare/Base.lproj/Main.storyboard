@@ -115,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xVf-hp-rQa">
-                                <rect key="frame" x="0.0" y="20" width="415" height="533"/>
+                                <rect key="frame" x="0.0" y="20" width="415" height="683"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3NJ-Bm-jiU">
                                         <rect key="frame" x="148" y="0.0" width="119" height="29"/>
@@ -132,19 +132,32 @@
                                             <action selector="tableSwitch:" destination="qgz-fv-iAJ" eventType="valueChanged" id="ddT-u2-krP"/>
                                         </connections>
                                     </segmentedControl>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Chats" translatesAutoresizingMaskIntoConstraints="NO" id="YwN-97-Of1">
-                                        <rect key="frame" x="173" y="78" width="70" height="70"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnZ-fz-7vY">
+                                        <rect key="frame" x="185" y="78" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttttt:" destination="qgz-fv-iAJ" eventType="touchUpInside" id="EmZ-eA-scX"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xi-6l-ZqE">
+                                        <rect key="frame" x="187" y="158" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Chats" translatesAutoresizingMaskIntoConstraints="NO" id="YwN-97-Of1">
+                                        <rect key="frame" x="173" y="229" width="70" height="70"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="Zya-8o-qmq"/>
                                             <constraint firstAttribute="width" constant="70" id="y8d-pQ-cTH"/>
                                         </constraints>
                                         <connections>
-                                            <outletCollection property="gestureRecognizers" destination="ugn-lE-Tlc" appends="YES" id="1mJ-AX-9xa"/>
+                                            <outletCollection property="gestureRecognizers" destination="Ybf-wf-CEU" appends="YES" id="r2n-Sb-Lcy"/>
                                         </connections>
                                     </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-E9-WlY">
-                                        <rect key="frame" x="4" y="198" width="407" height="335"/>
+                                        <rect key="frame" x="4" y="349" width="407" height="334"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="5Xk-4k-oWo">
@@ -164,8 +177,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="E1p-E9-WlY" firstAttribute="leading" secondItem="xVf-hp-rQa" secondAttribute="leading" constant="4" id="3p7-he-jkS"/>
+                                    <constraint firstItem="DnZ-fz-7vY" firstAttribute="centerX" secondItem="xVf-hp-rQa" secondAttribute="centerX" id="AOu-3S-d52"/>
                                     <constraint firstAttribute="bottom" secondItem="E1p-E9-WlY" secondAttribute="bottom" id="P2C-RT-yNl"/>
                                     <constraint firstAttribute="trailing" secondItem="E1p-E9-WlY" secondAttribute="trailing" constant="3" id="ldU-fH-r0Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="E1p-E9-WlY" secondAttribute="bottom" constant="183" id="yR8-gV-ChT"/>
+                                    <constraint firstItem="5xi-6l-ZqE" firstAttribute="centerX" secondItem="xVf-hp-rQa" secondAttribute="centerX" id="zqv-Lr-smf"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -183,14 +199,15 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="currentProfilePic" destination="YwN-97-Of1" id="mkw-qK-aJx"/>
+                        <outlet property="label" destination="5xi-6l-ZqE" id="iEH-DW-Ned"/>
                         <outlet property="profilePicTable" destination="E1p-E9-WlY" id="RHT-k4-6gw"/>
                         <outlet property="typeSelector" destination="3NJ-Bm-jiU" id="5mC-Nn-AjW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ht-9r-GIY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="ugn-lE-Tlc">
+                <tapGestureRecognizer id="Ybf-wf-CEU">
                     <connections>
-                        <action selector="imagePicker:" destination="qgz-fv-iAJ" id="AUd-AD-ull"/>
+                        <action selector="selectImage:" destination="qgz-fv-iAJ" id="ySp-Bi-jKh"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

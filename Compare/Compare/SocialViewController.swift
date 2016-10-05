@@ -14,6 +14,7 @@ class SocialViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var typeSelector: UISegmentedControl!
     @IBOutlet weak var profilePicTable: UITableView!
     @IBOutlet weak var currentProfilePic: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
     
     //hard coded data for now
@@ -110,7 +111,20 @@ class SocialViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     //#2 set up image picker
+    // tap gesture not working: need to enable user interaction in profilepic
+    @IBAction func selectImage(sender: UITapGestureRecognizer) {
+        label.text = "hahahah"
+    }
+    
+    @IBAction func buttttt(sender: UIButton) {
+        label.text = "haha"
+    }
+    
+    
     @IBAction func imagePicker(sender: UITapGestureRecognizer) {
+        
+        label.text = "hahaha"
+       
         let imagePickerController = UIImagePickerController()
         
         // Only allow photos to be picked, not taken.
